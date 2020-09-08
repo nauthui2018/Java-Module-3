@@ -1,0 +1,24 @@
+select * from data where name like '%N%';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
