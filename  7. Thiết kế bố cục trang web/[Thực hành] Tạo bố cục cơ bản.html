@@ -9,7 +9,6 @@
     body {
         margin: 10;
         padding: 10;
-        position: relative;
     }
     #logo {
         flex: 1;
@@ -32,21 +31,60 @@
         height: 100px;
         background-color: lightseagreen;
         display: flex;
-        
+        position: relative;
     }
 
     nav {
         width: 100%;
         height: 50px;
         background-color: lightskyblue;
-        position: relative;
-        margin-top: 5px;
-    }
-
-    #menu {
+        position: sticky;
+        top: 0;
+        margin-top: 10px;
         display: flex;
         justify-content: left;
         text-align: center;
+        z-index: 1;
+    }
+
+    #nav a {
+        text-decoration: none;
+    }
+
+
+    #nav li {
+        list-style: none;
+        position: relative;
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+
+    #nav li:hover {
+        font-weight: bolder;
+    }
+
+    #nav ul ul {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        visibility: hidden;
+        
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+    }
+
+    #nav ul li:hover ul{
+        visibility:visible;
+        text-align: left;
+        position: relative;
+        top: 0;
+        left: 30px;
+        padding-left: 10px;
+        font-weight: normal;
+        background-color: lightskyblue;
     }
 
 
@@ -72,6 +110,7 @@
         flex: 1;
         background-color: lemonchiffon;
         margin: 5px;
+        position: relative;
     }
 
     #main-content {
@@ -81,18 +120,19 @@
     }
 
     #right-content {
-        flex: 1;
+        flex: 1.5;
         background-color: lightseagreen;
         margin: 5px;
     }
 
     #main {
-        margin-top: 10px;
+        top: 10px;
         width: 100%;
-        height: 500px;
+        height: 2000px;
         background-color: lime;
         display: flex;
         justify-content: left;
+        position: relative;
     }
 
     #footer {
@@ -113,6 +153,47 @@
         height: 50px;
     }
 
+    #menu, #menu ul, #menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu li {
+        list-style: none;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+
+    #menu li a {
+        text-decoration: none;
+    }
+
+    #menu li:hover {
+        font-weight: bolder;
+    }
+
+    #menu ul ul {
+        position: absolute;
+        top: 0;
+        left: 50px;
+        visibility: hidden;
+    }
+
+    #menu ul li:hover ul{
+        visibility:visible;
+        font-weight: normal;
+    }
+
+    h3 {
+        color: teal;
+        font-size: 150%;
+        margin-left: 10px;
+    }
+
 </style>
 
 <body>
@@ -124,24 +205,54 @@
             
         </div>
     </div>
-    <nav id="menu">
+    <nav id="nav">
         <ul>
-            <li>Home</li>
-            <li>Students</li>
-            <li>Courses</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Students</a>
+                <ul>
+                    <li><a href="#">Learning</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Courses</a>
+                <ul>
+                    <li><a href="#">.Net</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
         <input type="Search">
     </nav>
-    <div id="main">
+    <div class="row" id="main">
         <div id="left-content">
-            <div class="pic">
-
-            </div>
-            <div class="Infor">
-
-            </div>
+            <h3 id="title">ACCP i10</h3>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Sem 1</a>
+                    <ul>
+                        <li><a href="#">Computing Fundametal</a></li>
+                        <li><a href="#">C Programming</a></li>
+                        <li><a href="#">Building Dynamic Website</a></li>
+                        <li><a href="#">MS Transact-SQL</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Sem 2</a>
+                    <ul>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">APJ - I</a></li>
+                        <li><a href="#">APJ - II</a></li>
+                        <li><a href="#">APJ - III</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Sem 3</a></li>
+                    <li><a href="#">Sem 4</a></li>
+                </ul>
+                </div>
         </div>
         <div id="main-content">
 
