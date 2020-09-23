@@ -18,7 +18,7 @@ public class ServerTimeServlet extends HttpServlet {
         writer.println("<html>");
         writer.println("<h1>Hello world</h1>");
         Date today = new Date();
-        writer.println("<h1>" + today + "</h1>");
+        writer.println("<h3>" + today + "</h3>");
         writer.println("</html>");
     }
 }
