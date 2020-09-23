@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f35abb3-0abd-498f-8cbd-4daf3f3ff7aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Simple_Login/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Login/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Login/target/Simple_Login-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Login/target/Simple_Login-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simple_Login/target/Simple_Login-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Simple_Login/target/Simple_Login-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/artifacts/server_time_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/artifacts/server_time_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/artifacts/Server_Time_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/artifacts/Server_Time_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/Server_Time.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/src/main/java/ServerTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/target/Server_Time-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/target/Server_Time-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/target/Server_Time-1.0-SNAPSHOT/WEB-INF/classes/ServerTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/target/Server_Time-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9. Tổng quan ứng dụng Web/Server_Time/target/classes/ServerTimeServlet.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1huB0UMp9hjwtgfuDrNL7v7lSTm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f35abb3-0abd-498f-8cbd-4daf3f3ff7aa" name="Default Changelist" comment="" />
+      <created>1600850873530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600850873530</updated>
+      <workItem from="1600850874676" duration="291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

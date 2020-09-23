@@ -1,3 +1,5 @@
+import entity.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -5,32 +7,44 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 @WebServlet(name = "LoginServlet", urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
+    public static HashMap<String, User> userList = new HashMap<>();
+
+    public void createData() {
+        User u1 = new User("Nguyen A", "a@123", "a123", "a123");
+        User u2 = new User("Nguyen B", "b@123", "b123", "b123");
+        User u3 = new User("Nguyen C", "c@123", "c123", "b123");
+        userList.put(u1.getUser(), u1);
+        userList.put(u2.getUser(), u2);
+        userList.put(u3.getUser(), u3);
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        createData();
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         PrintWriter writer = response.getWriter();
+        boolean isExist = userList.containsKey(username);
         writer.println("<html>");
-        if (username.equals("admin") && password.equals("admin")) {
-            writer.println("<h2>Welcome " + username + " to website</h2>");
+        if (isExist) {
+            User temp = userList.get(username);
+            if (temp.getPass().equals(password)) {
+                writer.println("<h2>Welcome " + temp.getName() + " to website</h2>");
+            } else {
+                writer.println("<h2>Wrong password</h2>");
+            }
         } else {
-            writer.println("<h2>Login Error</h2>");
+            writer.println("<h2>Invalid user</h2>");
         }
         writer.println("</html>");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        PrintWriter writer = response.getWriter();
-        writer.println("<html>");
-        if (username.equals("admin") && password.equals("admin")) {
-            writer.println("<h2>Welcome " + username + " to website</h2>");
-        } else {
-            writer.println("<h2>Login Error</h2>");
-        }
-        writer.println("</html>");
+
     }
 }
