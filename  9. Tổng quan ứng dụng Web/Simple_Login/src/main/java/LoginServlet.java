@@ -7,9 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 @WebServlet(name = "LoginServlet", urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
@@ -19,9 +17,9 @@ public class LoginServlet extends HttpServlet {
         User u1 = new User("Nguyen A", "a@123", "a123", "a123");
         User u2 = new User("Nguyen B", "b@123", "b123", "b123");
         User u3 = new User("Nguyen C", "c@123", "c123", "b123");
-        userList.put(u1.getUser(), u1);
-        userList.put(u2.getUser(), u2);
-        userList.put(u3.getUser(), u3);
+        userList.put(u1.getUserName(), u1);
+        userList.put(u2.getUserName(), u2);
+        userList.put(u3.getUserName(), u3);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -33,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         writer.println("<html>");
         if (isExist) {
             User temp = userList.get(username);
-            if (temp.getPass().equals(password)) {
+            if (temp.getPassword().equals(password)) {
                 writer.println("<h2>Welcome " + temp.getName() + " to website</h2>");
             } else {
                 writer.println("<h2>Wrong password</h2>");

@@ -3,17 +3,17 @@ package entity;
 public class User {
     private String name;
     private String email;
-    private String user;
-    private String pass;
+    private String userName;
+    private String password;
 
     public User() {
     }
 
-    public User(String name, String email, String user, String pass) {
+    public User(String name, String email, String userName, String password) {
         this.name = name;
         this.email = email;
-        this.user = user;
-        this.pass = pass;
+        this.userName = userName;
+        this.password = password;
     }
 
     public String getName() {
@@ -24,12 +24,12 @@ public class User {
         return email;
     }
 
-    public String getUser() {
-        return user;
+    public String getUserName() {
+        return userName;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
     public void setName(String name) {
@@ -40,11 +40,11 @@ public class User {
         this.email = email;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
