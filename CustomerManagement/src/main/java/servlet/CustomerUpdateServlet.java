@@ -13,25 +13,23 @@ import java.io.PrintWriter;
 
 import static services.CustomerManagement.customerList;
 
-@WebServlet(name = "CustomerUpdateServlet", urlPatterns = "/CustomerUpdate.jsp")
+@WebServlet(name = "CustomerUpdateServlet", urlPatterns = "/edit")
 public class CustomerUpdateServlet extends HttpServlet {
     Customer customer = new Customer();
     CustomerManagement management = new CustomerManagement();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String name = request.getParameter("name");
+        int id = Integer.parseInt(request.getParameter("id"));
+        String address = request.getParameter("address");
+        String email = request.getParameter("email");
+        PrintWriter writer = response.getWriter();
+        management.update(id, name, address, email);
+        response.sendRedirect("index.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        Customer temp = customerList.get(id);
-        String name = temp.getName();
-        String address = temp.getAddress();
-        String email = temp.getEmail();
-        PrintWriter writer = response.getWriter();
-        management.update(id, name, address, email);
-        writer.println("<html>");
-        response.sendRedirect("index.jsp");
-        writer.println("</html>");
+        String id = request.getParameter("id");
+        response.sendRedirect("edit.jsp?id="+ id);
     }
 }

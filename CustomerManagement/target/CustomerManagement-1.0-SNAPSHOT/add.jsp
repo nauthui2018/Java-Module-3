@@ -1,6 +1,4 @@
-<%@ page import="model.Customer" %>
-<%@ page import="services.CustomerManagement" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: NguyenVanHuong
   Date: 9/24/20
@@ -18,16 +16,11 @@
     </style>
 </head>
 <body>
-    <%
-        Customer customer = new Customer();
-        CustomerManagement management = new CustomerManagement();
-        ArrayList<Customer> list = management.getList();
-    %>
-    <h2>Update Customer</h2>
+    <h2>Add New Customer</h2>
     <button><a href="index.jsp">Back</a></button>
-    <form action="${pageContext.request.contextPath}/edit" method="get">
+    <form action="add" method="post">
         <p>Enter name</p>
-        <input name="name" type="text" size="30" placeholder="full name" value="<%=item.getId()%>">
+        <input name="name" type="text" size="30" placeholder="full name">
         <p>Enter address</p>
         <input name="address" type="text" size="30" placeholder="address">
         <p>Enter email</p>
@@ -35,8 +28,5 @@
         <br><br>
         <input type="submit" value="Submit">
     </form>
-
-
-
 </body>
 </html>

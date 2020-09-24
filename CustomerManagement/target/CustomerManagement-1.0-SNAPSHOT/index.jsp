@@ -42,10 +42,10 @@
     <%
         Customer customer = new Customer();
         CustomerManagement management = new CustomerManagement();
-        ArrayList<Customer> list = management.getList();
+        ArrayList<Customer> list = new ArrayList<>(customerList.values());
     %>
     <h2>Customer List</h2>
-    <button><a href="CustomerAdd.jsp">Add new customer</a></button>
+    <button><a href="add.jsp">Add new customer</a></button>
     <table>
         <tr>
             <th>Full Name</th>
@@ -62,8 +62,8 @@
             <td><%=item.getAddress()%></td>
             <td><%=item.getEmail()%></td>
             <td>
-                <button name="edit" type="submit" value="<%=item.getId()%>"><a href="CustomerUpdate.jsp">Edit</a></button>
-                <button name="edit" type="submit" value="<%=item.getId()%>">Delete</button>
+                <button><a href="edit?id=<%=item.getId()%>">Edit</a></button>
+                <button><a href="delete?id=<%=item.getId()%>">Delete</a></button>
             </td>
         </tr>
         <%

@@ -9,6 +9,13 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(String name, String address, String email, int id) {
+        this.name = name;
+        this.address = address;
+        this.email = email;
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }

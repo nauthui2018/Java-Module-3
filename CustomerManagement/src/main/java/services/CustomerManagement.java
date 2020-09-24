@@ -22,19 +22,17 @@ public class CustomerManagement {
     }
 
     public void update(int id, String name, String address, String email) {
-        Customer customer1 = customerList.get(id);
-        customer1.setName(name);
-        customer1.setAddress(address);
-        customer1.setEmail(email);
+        Customer current = getCustomerByID(id);
+        Customer replace = new Customer(name, address, email, id);
+        customerList.replace(id, current, replace);
     }
 
-    public void delete() {
-
+    public void delete(int id) {
+        customerList.remove(id);
     }
 
-    public ArrayList<Customer> getList() {
-        ArrayList<Customer> list = new ArrayList<>(customerList.values());
-        return list;
+    public Customer getCustomerByID(int id) {
+        return customerList.get(id);
     }
 
 }

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "CustomerDeleteServlet")
+@WebServlet(name = "CustomerDeleteServlet", urlPatterns = "/delete")
 public class CustomerDeleteServlet extends HttpServlet {
     Customer customer = new Customer();
     CustomerManagement management = new CustomerManagement();
@@ -21,11 +21,9 @@ public class CustomerDeleteServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name");
-        String address = request.getParameter("address");
-        String email = request.getParameter("email");
+        int id = Integer.parseInt(request.getParameter("id"));
+        management.delete(id);
         PrintWriter writer = response.getWriter();
-        management.add(name, address, email);
         writer.println("<html>");
         response.sendRedirect("index.jsp");
         writer.println("</html>");
