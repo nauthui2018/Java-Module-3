@@ -17,9 +17,9 @@ public class LoginServlet extends HttpServlet {
         User u1 = new User("Nguyen A", "a@123", "a123", "a123");
         User u2 = new User("Nguyen B", "b@123", "b123", "b123");
         User u3 = new User("Nguyen C", "c@123", "c123", "b123");
-        userList.put(u1.getUserName(), u1);
-        userList.put(u2.getUserName(), u2);
-        userList.put(u3.getUserName(), u3);
+        userList.put(u1.getUsername(), u1);
+        userList.put(u2.getUsername(), u2);
+        userList.put(u3.getUsername(), u3);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
