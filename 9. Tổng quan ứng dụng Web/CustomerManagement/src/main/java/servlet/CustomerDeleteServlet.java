@@ -1,7 +1,7 @@
 package servlet;
 
 import model.Customer;
-import services.CustomerManagement;
+import services.CustomerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "CustomerDeleteServlet", urlPatterns = "/delete")
 public class CustomerDeleteServlet extends HttpServlet {
     Customer customer = new Customer();
-    CustomerManagement management = new CustomerManagement();
+    CustomerService management = new CustomerService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

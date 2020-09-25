@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class CustomerManagement {
+public class CustomerService {
     public static int totalCustomer = 0;
     public static HashMap<Integer, Customer> customerList = new HashMap<Integer, Customer>();
     Customer customer = new Customer();

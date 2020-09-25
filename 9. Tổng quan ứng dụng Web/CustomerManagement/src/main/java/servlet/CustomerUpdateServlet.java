@@ -1,7 +1,7 @@
 package servlet;
 
 import model.Customer;
-import services.CustomerManagement;
+import services.CustomerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,12 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static services.CustomerManagement.customerList;
-
 @WebServlet(name = "CustomerUpdateServlet", urlPatterns = "/edit")
 public class CustomerUpdateServlet extends HttpServlet {
     Customer customer = new Customer();
-    CustomerManagement management = new CustomerManagement();
+    CustomerService management = new CustomerService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");

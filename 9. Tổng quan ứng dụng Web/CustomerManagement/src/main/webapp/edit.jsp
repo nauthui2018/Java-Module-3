@@ -1,7 +1,7 @@
 <%@ page import="model.Customer" %>
-<%@ page import="services.CustomerManagement" %>
+<%@ page import="services.CustomerService" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="static services.CustomerManagement.customerList" %><%--
+<%@ page import="static services.CustomerService.customerList" %><%--
   Created by IntelliJ IDEA.
   User: NguyenVanHuong
   Date: 9/24/20
@@ -20,7 +20,7 @@
 </head>
 <body>
     <%
-        CustomerManagement management = new CustomerManagement();
+        CustomerService management = new CustomerService();
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = management.getCustomerByID(id);
     %>

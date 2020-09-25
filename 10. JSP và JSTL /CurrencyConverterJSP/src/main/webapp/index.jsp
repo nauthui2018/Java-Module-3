@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-
+    <h2>Currency Converter</h2>
+    <p>Rate:</p>
+    <input >
+    <p>USD:</p>
+    <input type="submit" name="convert" value="Converter">
 </body>
 </html>

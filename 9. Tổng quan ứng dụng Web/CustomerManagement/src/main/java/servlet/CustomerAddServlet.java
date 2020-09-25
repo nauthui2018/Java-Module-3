@@ -1,7 +1,7 @@
 package servlet;
 
 import model.Customer;
-import services.CustomerManagement;
+import services.CustomerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,12 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
 
 @WebServlet(name = "CustomerAddServlet", urlPatterns = "/add")
 public class CustomerAddServlet extends HttpServlet {
     Customer customer = new Customer();
-    CustomerManagement management = new CustomerManagement();
+    CustomerService management = new CustomerService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
