@@ -45,6 +45,7 @@
         ArrayList<Customer> list = new ArrayList<>(customerList.values());
     %>
     <h2>Customer List</h2>
+    dasfw
     <button><a href="add.jsp">Add new customer</a></button>
     <table>
         <tr>
